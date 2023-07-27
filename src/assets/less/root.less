@@ -8,11 +8,11 @@
 @media only screen and (min-width: 0em) {
   // Website colors
   :root {
-    --primary: #ffba19;
-    --primaryLight: #ffd675;
-    --secondary: #001f3f;
-    --secondaryLight: #001f3f;
-    --headerColor: #1a1a1a;
+    --primary: #B3A369;
+    --primaryLight: #A4925A;
+    --secondary: #54585A;
+    --secondaryLight: #D6DBD4;
+    --headerColor: #003057;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
 
@@ -71,7 +71,7 @@
     background-color: var(--primary);
 
     // Transition Properties
-    color: #000;
+    color: var(--bodyTextColorWhite);
     transition: color 0.3s;
     transition-delay: 0.1s;
 
@@ -91,7 +91,7 @@
       top: 0;
       left: 0;
       z-index: -1;
-      background-color: #000;
+      background-color: var(--headerColor);
 
       //Transition properties
       width: 0;
@@ -1009,7 +1009,7 @@
 @media only screen and (min-width: 1300px) {
   #archive {
     position: relative;
-    margin-top: (100/16rem);
+    margin-bottom: (100/16rem);
     &:before {
       display: none;
     }
