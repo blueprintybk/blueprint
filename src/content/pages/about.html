@@ -1,0 +1,126 @@
+---
+title: 'About'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'about/'
+eleventyNavigation:
+    key: About Us
+    order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="/css/about.css">
+{% endblock %}
+
+{% block body %}
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    <h1 id="home-h">About Us</h1>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
+        <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
+        <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets"
+            loading="eager" width="2500" height="1667">
+    </picture>
+
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-left">
+            <picture class="cs-picture cs-picture1">
+                <source media="(max-width: 600px)" srcset="/assets/images/inside-cover.png">
+                <source media="(min-width: 601px)" srcset="/assets/images/inside-cover.png">
+                <img aria-hidden="true" decoding="async" src="/assets/images/inside-cover.png" alt="cabinets"
+                    loading="lazy" width="400" height="563">
+            </picture>
+            <picture class="cs-picture cs-picture2">
+                <source media="(max-width: 600px)" srcset="/assets/images/blueprint-board-1908.png">
+                <source media="(min-width: 601px)" srcset="/assets/images/blueprint-board-1908.png">
+                <img aria-hidden="true" decoding="async" src="/assets/images/blueprint-board-1908.png" alt="house"
+                    loading="lazy" width="400" height="563">
+            </picture>
+        </div>
+        <!-- Right Content Section-->
+        <div class="cs-right">
+            <span class="cs-topper">A Tech Tradition</span>
+            <h2 class="cs-title">About The <i>Blueprint</i></h2>
+            <p class="cs-text">
+                For more than a century, the Georgia Institute of Technology's <i>Blueprint</i>
+                has been publishing annually, with its inaugural volume released back in 1908. Produced entirely by a
+                dedicated team of students, this publication chronicles the significant events that unfold throughout
+                the academic year, encompassing a diverse array of topics such as sports, student organizations, and
+                campus culture.
+            </p>
+            <p class="cs-text">
+                The Blueprint looks to return this year as the ultimate documentarian of student life at Tech after
+                going into hiatus in 2018, creating a timeless volume of capturing cherished memories that
+                will endure for a lifetime.
+            </p>
+            <div class="cs-flex-group">
+                <p class="cs-flex-p">
+                    Dear Georgia Tech, thy name we'll wear,
+                    <br /> <span style="margin-left: 10%">Thy fame we'll e'er uphold;</span>
+                    <br />We'll give the honor to the Engineer,
+                    <br /> <span style="margin-left: 10%">And rally round the White and Gold.</span>
+                </p>
+                <span class="cs-name">Song of the Georgia Tech</span>
+                <span class="cs-job">Volume I of the <i>Blueprint</i>, published 1908</span>
+                <img class="cs-quote-icon" loading="lazy" decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136"
+                    height="77" />
+            </div>
+            <a href="/archives" class="cs-button-solid">Look at Past Volumes</a>
+        </div>
+    </div>
+</section>
+<section id="sbs-r">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-left">
+            <picture class="cs-picture cs-picture1">
+                <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
+                <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house"
+                    loading="lazy" width="400" height="560">
+            </picture>
+            <picture class="cs-picture cs-picture2">
+                <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
+                <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets"
+                    loading="lazy" width="400" height="560">
+            </picture>
+        </div>
+        <!-- Right Content Section-->
+        <div class="cs-right">
+            <span class="cs-topper">A storied history</span>
+            <h2 class="cs-title">It all began in 1908.</h2>
+            <p class="cs-text">
+                The first volume was published for the Georgia School of Technology, as Tech was known at the time,
+                featuring sections on the history of the school, the classes, sports, fraternities and advertisements.
+                Sections were broken up with poems and illustrations inserted throughout the book. The first
+                Editor-in-Chief was John G. Chapman.
+            </p>
+            <p class="cs-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non tenetur, iure nihil ipsam qui atque
+                commodi id voluptatem nesciunt, quis animi fuga cum doloribus! Eaque laboriosam, unde consectetur iure
+                asperiores ullam. Consequuntur debitis a voluptatibus vitae optio autem explicabo quia neque est quas,
+                in placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus modi laudantium
+                voluptatibus rem libero error minus quia eligendi sapiente eos.
+            </p>
+            <a href="/blog" class="cs-button-solid">Read our Blog</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

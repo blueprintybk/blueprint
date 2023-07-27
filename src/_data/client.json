@@ -1,0 +1,16 @@
+{
+	"name": "Blueprint Yearbook",
+	"eic": "Rahul S. Deshpande",
+	"email": "gatechblueprint@gmail.com",
+	"phoneForTel": "",
+	"phoneFormatted": "",
+	"address": {
+		"lineOne": "351 Ferst Dr. NW",
+		"lineTwo": "Suite 2150 (Student Media)",
+		"city": "Atlanta",
+		"state": "GA",
+		"zip": "30332",
+		"mapLink": "https://goo.gl/maps/KYkWdS3GbCVFrXCx5"
+	},
+	"domain": "blueprint.gatech.edu"
+}

@@ -1,0 +1,163 @@
+---
+title: 'Blueprint Yearbook'
+description: 'Official yearbook of the Georgia Institute of Technology.'
+preloadImg: '/assets/images/landing.jpg'
+permalink: '/'
+eleventyNavigation:
+    key: Home
+    order: 100
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="/css/local.css" />
+<link rel="stylesheet" href="/css/critical.css" />
+
+<!-- Script for Netlify Identity -->
+<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script defer>
+    if (window.netlifyIdentity) {
+        window
+            .netlifyIdentity
+            .on('init', (user) => {
+                if (!user) {
+                    window
+                        .netlifyIdentity
+                        .on('login', () => {
+                            document.location.href = '/admin/';
+                        });
+                }
+            });
+    }
+</script>
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero">
+    <div class="cs-container">
+        <div class="cs-flex-group">
+            <span class="cs-topper">Georgia Tech's Official Yearbook</span>
+            <h1 class="cs-title">Preserving Georgia Tech memories for over a century</h1>
+            <p class="cs-text">
+                Making a return in 2024.
+            </p>
+            <a href="/about" class="cs-button-solid">Learn More</a>
+            <a href="/contact" class="cs-button-transparent">
+                <img class="cs-img" loading="lazy" decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg" alt="play icon" width="17"
+                    height="17" />
+                Get Involved
+            </a>
+        </div>
+    </div>
+
+    <!-- Background Image -->
+    <picture class="cs-picture">
+        <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
+        <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500"
+            height="1667" loading="eager">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services" class="services">
+    <!-- Get Icons From flaticon.com -->
+    <div class="card">
+        <picture>
+            <img aria-hidden="true" decoding="async" src="/assets/svgs/graduation.svg" alt="appliance" width="48"
+                height="48" />
+        </picture>
+        <h2>Graduating Students</h2>
+        <p>Graduating students will receive a copy of the <i>Blueprint</i> at Spring Commencement. No fees, no sign-up,
+            no worries!
+        </p>
+    </div>
+    <div class="card">
+        <picture>
+            <img aria-hidden="true" decoding="async" src="/assets/svgs/reserve.svg" alt="appliance" width="48"
+                height="48" />
+        </picture>
+        <h2>Non-graduates</h2>
+        <p>Individual <i>Blueprint</i> volumes can be reserved by non graduates for $20. Students may also pick up a
+            volume at Spring Commencement for free, but quantities are limited!</p>
+    </div>
+    <div class="card">
+        <picture>
+            <img aria-hidden="true" decoding="async" src="/assets/svgs/firstyear-fourpack.svg" alt="appliance"
+                width="48" height="48" />
+        </picture>
+        <h2>First-Year Four-Pack</h2>
+        <p>First years may reserve their books for four years in advance for a one-time payment of $60, saving $20!</p>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-left">
+            <picture class="cs-picture cs-picture1">
+                <source media="(max-width: 600px)" srcset="/assets/images/inside-cover.png">
+                <source media="(min-width: 601px)" srcset="/assets/images/inside-cover.png">
+                <img aria-hidden="true" decoding="async" src="/assets/images/inside-cover.png" alt="cabinets"
+                    loading="lazy" width="400" height="563">
+            </picture>
+            <picture class="cs-picture cs-picture2">
+                <source media="(max-width: 600px)" srcset="/assets/images/blueprint-board-1908.png">
+                <source media="(min-width: 601px)" srcset="/assets/images/blueprint-board-1908.png">
+                <img aria-hidden="true" decoding="async" src="/assets/images/blueprint-board-1908.png" alt="house"
+                    loading="lazy" width="400" height="563">
+            </picture>
+        </div>
+        <!-- Right Content Section-->
+        <div class="cs-right">
+            <span class="cs-topper">About Us</span>
+            <h2 class="cs-title"><i>Blueprint</i> is historic.</h2>
+            <p class="cs-text">
+                The <i>Blueprint</i> has been published annually at the Georgia Institute of Technology for
+                over a century; our first volume was published in 1908. Our student-led staff compiled the major events
+                from the school year covering a broad range of topics, including sports, student organizations, and
+                campus culture.
+            </p>
+            <p class="cs-text">
+                Sadly, the Blueprint fell into hiatus in 2018, but looks to return this year as the documentarian of
+                student life at Tech, creating a volume of memories to last a lifetime.
+            </p>
+            <div class="cs-flex-group">
+                <p class="cs-flex-p">
+                    Dear Georgia Tech, thy name we'll wear,
+                    <br /> <span style="margin-left: 10%">Thy fame we'll e'er uphold;</span>
+                    <br />We'll give the honor to the Engineer,
+                    <br /> <span style="margin-left: 10%">And rally round the White and Gold.</span>
+                </p>
+                <span class="cs-name">Song of the Georgia Tech</span>
+                <span class="cs-job">Volume I of the <i>Blueprint</i>, published 1908</span>
+                <img class="cs-quote-icon" loading="lazy" decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136"
+                    height="77" />
+            </div>
+            <a href="/about" class="cs-button-solid">More About Us</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+{% include 'components/gallery.html' %}
+
+{% endblock %}

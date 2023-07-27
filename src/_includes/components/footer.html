@@ -1,0 +1,73 @@
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="footer">
+    <div class="container">
+        <div class="left-section">
+            <a class="logo" href="/"><img loading="lazy" decoding="async" src="/assets/svgs/logo-white.svg" alt="logo"
+                    width="364px" height="108px"></a>
+            <p>
+                Georgia Tech's Official Student-Run Yearbook. Established 1908.
+            </p>
+        </div>
+        <div class="right-section">
+            <div class="lists">
+                <ul>
+                    <li>
+                        <h2>Information</h2>
+                    </li>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/archives">Archives</a>
+                    </li>
+                    <li>
+                        <a href="/staff">Staff</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+                <!-- <ul>
+                    <li>
+                        <h2>Services</h2>
+                    </li>
+                    <li>Service1</li>
+                    <li>Service2</li>
+                    <li>Service4</li>
+                    <li>Service5</li>
+                </ul> -->
+                <ul>
+                    <li>
+                        <h2>Contact</h2>
+                    </li>
+                    <li>
+                        <a href="{{client.address.mapLink}}">
+                            {{client.address.lineOne}}<br>
+                            {{client.address.lineTwo}}<br>
+                            {{client.address.city}}
+                            {{client.address.state}}
+                            {{client.address.zip}}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:{{client.email}}">{{client.email}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="credit">
+        <span class="copyright">
+            &copy;
+            <script>document.write(new Date().getFullYear())</script>
+            {{client.eic}}, Editor-in-Chief, and the Georgia Tech Board of Student Publications
+        </span>
+    </div>
+</footer>
