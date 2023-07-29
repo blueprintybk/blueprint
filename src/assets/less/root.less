@@ -8,10 +8,10 @@
 @media only screen and (min-width: 0em) {
   // Website colors
   :root {
-    --primary: #B3A369;
-    --primaryLight: #A4925A;
-    --secondary: #54585A;
-    --secondaryLight: #D6DBD4;
+    --primary: #b3a369;
+    --primaryLight: #a4925a;
+    --secondary: #54585a;
+    --secondaryLight: #d6dbd4;
     --headerColor: #003057;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
@@ -102,7 +102,6 @@
 
 /* Fonts and general styles */
 @media only screen and (min-width: 0em) {
-
   body,
   html {
     margin: 0;
@@ -111,6 +110,11 @@
     font-family: "Crimson Pro", Georgia, sans-serif;
     color: var(--bodyTextColor);
     overflow-x: hidden;
+  }
+
+  a:not(.cs-button-solid):visited {
+    text-decoration: none;
+    color: var(--primary);
   }
 
   *,
@@ -830,8 +834,8 @@
       .cs-li-link {
         color: var(--bodyTextColorWhite);
         &:before {
-            background-color: var(--primaryLight);
-          }
+          background-color: var(--primaryLight);
+        }
       }
     }
   }
