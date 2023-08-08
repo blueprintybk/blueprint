@@ -8,85 +8,91 @@ permalink: 'contact/'
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/css/contact.css">
+<link rel="stylesheet" href="/css/contact.css">
 {% endblock %}
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">Contact Us</h1>
-        <picture>
-            <!-- <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
+<section id="int-hero">
+    <h1 id="home-h">Contact Us</h1>
+    <picture>
+        <!-- <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
             <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg"> -->
-            <img aria-hidden="true" decoding="async" src="/assets/images/stupubs-computers.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-        </picture>
-    </section>
+        <img aria-hidden="true" decoding="async" src="/assets/images/stupubs-computers.jpg" alt="kitchen cabinets"
+            loading="eager" width="2500" height="1667">
+    </picture>
+</section>
 
-    <!-- ============================================ -->
-    <!--                Contact Form                  -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                Contact Form                  -->
+<!-- ============================================ -->
 
-    <section id="cs-contact">
-        <div class="cs-container">
-            <form id="cs-form" name="Contact Form" method="POST">
-                <div class="cs-content">
-                    <span class="cs-topper">Contact</span>
-                    <h2 class="cs-title">Get Involved</h2>
-                    <p class="cs-text">
-                        Interested in joining our staff or donating to support our publication? DM us on Instagram or send us an email!
-                    </p>
-                </div>
-                <label>
-                    Name
-                    <input required type="text" id="name" name="name" placeholder="Name">
-                </label>
-                <label>
-                    Email
-                    <input required type="text" id="email" name="email" placeholder="Email">
-                </label>
-                <label>
-                    Phone
-                    <input required type="text" id="phone" name="phone" placeholder="Phone">
-                </label>
-                <label>
-                    How Did You Find Us
-                    <input type="text" id="find" name="find-us" placeholder="How did you find us?">
-                </label>
-                <label class="cs-label-message">
-                    Message
-                    <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
-                </label>
-                <button class="cs-button-solid" type="submit">Submit Message</button>
-            </form>
-            <div class="cs-right-section">
-                <!--Email-->
-                <span class="cs-header">Email</span>
-                <a class="cs-link" href="mailto:{{client.email}}">{{client.email}}</a>
-                <!--Address-->
-                <span class="cs-header">Address</span>
-                <a class="cs-link" href="{{client.address.mapLink}}">
-                    {{client.address.lineOne}},
-                    <br />
-                    {{client.address.lineTwo}},
-                    <br />
-                    <span class="cs-block">
-                        {{client.address.city}}
-                        {{client.address.state}}
-                        {{client.address.zip}}
-                    </span>
-                </a>
-
-                <!-- Background Image-->
-                <picture class="cs-bg-picture">
-                    <source media="(min-width: 601px)" srcset="/assets/images/tech-tower.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/tech-tower.jpg" alt="building" loading="lazy" width="2500" height="1667">
-                </picture>
-
+<section id="cs-contact">
+    <div class="cs-container">
+        <form id="cs-form" name="Contact Form" action="https://formspree.io/f/meqbaqoy" method="POST">
+            <div class="cs-content">
+                <span class="cs-topper">Contact</span>
+                <h2 class="cs-title">Get Involved</h2>
+                <p class="cs-text">
+                    Interested in joining our staff? Join our <a
+                        href="https://join.slack.com/t/blueprint2023-24/shared_invite/zt-1yyzoztnb-FTdFURDzb2p2qyM8CnWL8Q">Slack</a>
+                    to dive right in. Or, just come to a meeting— Thursdays at 6pm in the Student Media Office of the
+                    Student Center (Suite 2150, near the Blue Donkey). <br /> <br /> Interested in donating or placing
+                    an ad in this year's volume? Send us an email using the form below.
+                </p>
             </div>
+            <label>
+                Name
+                <input required type="text" id="name" name="name" placeholder="Name">
+            </label>
+            <label>
+                Email
+                <input required type="text" id="email" name="email" placeholder="Email">
+            </label>
+            <label>
+                Phone
+                <input required type="text" id="phone" name="phone" placeholder="Phone">
+            </label>
+            <label>
+                How Did You Find Us
+                <input type="text" id="find" name="find-us" placeholder="How did you find us?">
+            </label>
+            <label class="cs-label-message">
+                Message
+                <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
+            </label>
+            <button class="cs-button-solid" type="submit">Submit Message</button>
+        </form>
+        <div class="cs-right-section">
+            <!--Email-->
+            <span class="cs-header">Email</span>
+            <a class="cs-link" href="mailto:{{client.email}}">{{client.email}}</a>
+            <!--Address-->
+            <span class="cs-header">Address</span>
+            <a class="cs-link" href="{{client.address.mapLink}}">
+                {{client.address.lineOne}},
+                <br />
+                {{client.address.lineTwo}},
+                <br />
+                <span class="cs-block">
+                    {{client.address.city}}
+                    {{client.address.state}}
+                    {{client.address.zip}}
+                </span>
+            </a>
+
+            <!-- Background Image-->
+            <picture class="cs-bg-picture">
+                <source media="(min-width: 601px)" srcset="/assets/images/tech-tower.jpg">
+                <img aria-hidden="true" decoding="async" src="/assets/images/tech-tower.jpg" alt="building"
+                    loading="lazy" width="2500" height="1667">
+            </picture>
+
         </div>
-    </section>
+    </div>
+</section>
 {% endblock %}
