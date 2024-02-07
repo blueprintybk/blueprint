@@ -24,3 +24,9 @@
   to = "https://epay.gatech.edu/C20793_ustores/web/product_detail.jsp?PRODUCTID=5791"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/ads"
+  to = "https://epay.gatech.edu:443/C20793_ustores/web/store_cat.jsp?STOREID=559&CATID=672"
+  status = 301
+  force = true
