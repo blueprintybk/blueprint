@@ -19,3 +19,8 @@
 [build.processing.html]
   pretty_urls = false
 
+[[redirects]]
+  from = "/order"
+  to = "https://epay.gatech.edu/C20793_ustores/web/product_detail.jsp?PRODUCTID=5791"
+  status = 200
+  force = true
