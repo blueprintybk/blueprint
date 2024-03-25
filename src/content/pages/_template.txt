@@ -11,6 +11,9 @@ eleventyNavigation:
 
 {% extends "layouts/base.html" %}
 
+{% block banner %}
+    <!-- Any page-specific tags that belong in the <head>, such as a page-specific stylesheet -->
+{% endblock %}
 {% block head %}
     <!-- Any page-specific tags that belong in the <head>, such as a page-specific stylesheet -->
 {% endblock %}
